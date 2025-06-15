@@ -1,4 +1,4 @@
-[data_catalog.md](https://github.com/user-attachments/files/20746677/data_catalog.md)[Uplo# Data Catalog for Gold Layer
+# Data Catalog for Gold Layer
 
 ## Overview
 The Gold Layer is the business-level data representation, structured to support analytical and reporting use cases. It consists of **dimension tables** and **fact tables** for specific business metrics.
