@@ -14,7 +14,7 @@
 
 Usage Notes:
     - Run these checks after data loading bronze Layer.
-    - Investigate and resolve any discrepancies found during the checks.
+    - Investigate any discrepancies found during the checks.
 */
 
 -- ====================================================================
@@ -89,10 +89,9 @@ WHERE sls_order_dt <= 0 OR LEN(sls_order_dt) != 8
 SELECT DISTINCT sls_sales AS  old_sls_sales,
 	   sls_quantity,
 	   sls_price AS old_sls_price,
-	   CASE WHEN sls_sales IS NULL OR sls_sales <= 0 OR sls_sales != sls_quantity * ABS(sls_price)
-			THEN sls_quantity * ABS(sls_price)
-	   ELSE sls_sales
-	END AS sls_sales
+	   CASE WHEN sls_sales IS NULL OR sls_sales <= 0 OR sls_sales != sls_quantity * ABS(sls_price) THEN sls_quantity * ABS(sls_price)
+	   	ELSE sls_sales
+	   END AS sls_sales
 
 FROM bronze.crm_sales_details
 WHERE sls_sales != sls_quantity * sls_price
@@ -122,11 +121,11 @@ FROM bronze.erp_cust_az12
 -- ====================================================================
 -- Data Standardization & Consistency
 SELECT DISTINCT cntry AS old_cntry,
-				CASE WHEN TRIM(cntry) = 'DE' THEN 'Germany'
-					 WHEN TRIM(cntry) IN ('US', 'USA') THEN 'United States'
-					 WHEN TRIM(cntry) = '' OR cntry IS NULL THEN 'N/A'
-					 ELSE TRIM(cntry)
-				END AS cntry
+		CASE WHEN TRIM(cntry) = 'DE' THEN 'Germany'
+		     WHEN TRIM(cntry) IN ('US', 'USA') THEN 'United States'
+		     WHEN TRIM(cntry) = '' OR cntry IS NULL THEN 'N/A'
+		     ELSE TRIM(cntry)
+		END AS cntry
 FROM bronze.erp_loc_a101
 
 -- ====================================================================
@@ -135,8 +134,8 @@ FROM bronze.erp_loc_a101
 -- Check unwanted spaces
 SELECT * FROM bronze.erp_px_cat_g1v2
 WHERE cat!= TRIM(cat)
-	OR subcat != TRIM(subcat)
-	OR maintenance != TRIM(maintenance)
+OR subcat != TRIM(subcat)
+OR maintenance != TRIM(maintenance)
 
 -- Data Standardization & Consistency
 SELECT DISTINCT cat
