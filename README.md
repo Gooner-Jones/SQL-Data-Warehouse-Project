@@ -48,11 +48,10 @@ Specifications
 
 Objective
 - Develop SQL-based analytics to deliver detailed insights into:
-
-Customer Behavior
-- Product Performance
-- Sales Trends
-- These insights empower stakeholders with key business metrics, enabling strategic decision-making
+1. Customer Behavior
+2. Product Performance
+3. Sales Trends
+4. These insights empower stakeholders with key business metrics, enabling strategic decision-making
 
 # License
 
