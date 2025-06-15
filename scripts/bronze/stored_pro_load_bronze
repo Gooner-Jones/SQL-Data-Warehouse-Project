@@ -15,8 +15,6 @@
 -- ================================================================================================================
 CREATE or ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
-	PRINT 'Loading Bronze Layer';
-	PRINT 'loading crm tables';
 	TRUNCATE TABLE bronze.crm_cust_info;
 	BULK INSERT bronze.crm_cust_info
 	FROM 'C:\Users\User\OneDrive\Desktop\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
@@ -38,7 +36,6 @@ BEGIN
 		  FIELDTERMINATOR = ',',
 		  TABLOCK);
 		  
-	PRINT 'Loading erp tables';
 	TRUNCATE TABLE bronze.erp_loc_a101;
 	BULK INSERT bronze.erp_loc_a101
 	FROM 'C:\Users\User\OneDrive\Desktop\sql-data-warehouse-project\datasets\source_erp\loc_a101.csv'
