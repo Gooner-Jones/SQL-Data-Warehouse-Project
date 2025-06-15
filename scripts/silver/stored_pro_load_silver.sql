@@ -8,9 +8,9 @@
    - Truncates Silver tables.
    - Inserts transformed and cleansed data from Bronze into Silver tables.
 		
-Parameters: This stored procedure does not accept any parameters or return any values.
+   Parameters: This stored procedure does not accept any parameters or return any values.
 
-Usage Example: EXEC Silver.load_silver;
+   Usage Example: EXEC Silver.load_silver;
 */
 -- ================================================================================================================
 CREATE OR ALTER PROCEDURE silver.load_silver AS
