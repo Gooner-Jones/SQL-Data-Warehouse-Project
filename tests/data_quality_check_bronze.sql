@@ -1,3 +1,22 @@
+
+-- ===============================================================================
+-- Quality Checks
+-- ===============================================================================
+/* This script performs various quality checks for data consistency, accuracy, 
+   and standardization across the 'bronze' layer. 
+   
+   It includes checks for:
+    - Null or duplicate primary keys.
+    - Unwanted spaces in string fields.
+    - Data standardization and consistency.
+    - Invalid date ranges and orders.
+    - Data consistency between related fields.
+
+Usage Notes:
+    - Run these checks after data loading bronze Layer.
+    - Investigate and resolve any discrepancies found during the checks.
+*/
+
 -- ====================================================================
 -- Checking 'bronze.crm_cust_info'
 -- ====================================================================
@@ -122,9 +141,3 @@ WHERE cat!= TRIM(cat)
 -- Data Standardization & Consistency
 SELECT DISTINCT cat
 FROM bronze.erp_px_cat_g1v2
-
-
-
-
-
-
