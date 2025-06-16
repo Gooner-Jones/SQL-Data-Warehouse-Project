@@ -21,8 +21,7 @@
 
 -- Check for NULLs or Duplicates in Primary Key
 -- Expectation: No Results
-SELECT cst_id,
-       COUNT(*)
+SELECT cst_id, COUNT(*)
 FROM silver.crm_cust_info
 GROUP BY cst_id
 HAVING COUNT(*) > 1 OR cst_id = NULL;
@@ -51,8 +50,7 @@ FROM silver.crm_cust_info
   
 -- Check for NULLs or Duplicates in Primary Key
 -- Expectation: No Results
-SELECT prd_id,
-       COUNT(*) 
+SELECT prd_id, COUNT(*) 
 FROM silver.crm_prd_info
 GROUP BY prd_id
 HAVING COUNT(*) > 1 OR prd_id IS NULL;
