@@ -23,8 +23,7 @@ Usage Notes:
 
 -- Check for NULLs or Duplicates in Primary Key
 -- Expectation: No Results
-SELECT cst_id,
-       COUNT(*)
+SELECT cst_id, COUNT(*)
 FROM bronze.crm_cust_info
 GROUP BY cst_id
 HAVING COUNT(*) > 1 OR cst_id = NULL;
@@ -84,11 +83,13 @@ OR sls_order_dt < 19000101
 -- Sales = Quantity * Price
 -- Values must not be null, zero or negative.
 SELECT DISTINCT sls_sales AS  old_sls_sales,
-	   sls_quantity,
-	   sls_price AS old_sls_price,
-	   CASE WHEN sls_sales IS NULL OR sls_sales <= 0 OR sls_sales != sls_quantity * ABS(sls_price) THEN sls_quantity * ABS(sls_price)
-	   	ELSE sls_sales
-	   END AS sls_sales
+	   	sls_quantity,
+	   	sls_price AS old_sls_price,
+	   	CASE WHEN sls_sales IS NULL 
+		     OR sls_sales <= 0 
+		     OR sls_sales != sls_quantity * ABS(sls_price) THEN sls_quantity * ABS(sls_price)
+	   	     ELSE sls_sales
+	   	END AS sls_sales
 
 FROM bronze.crm_sales_details
 WHERE sls_sales != sls_quantity * sls_price
@@ -131,7 +132,8 @@ FROM bronze.erp_loc_a101
 -- =============================================================================================================================
 
 -- Check unwanted spaces
-SELECT * FROM bronze.erp_px_cat_g1v2
+SELECT * 
+FROM bronze.erp_px_cat_g1v2
 WHERE cat!= TRIM(cat)
 OR subcat != TRIM(subcat)
 OR maintenance != TRIM(maintenance)
