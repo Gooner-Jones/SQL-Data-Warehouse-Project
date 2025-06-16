@@ -12,7 +12,7 @@
     - Invalid date ranges and orders.
     - Data consistency between related fields.
 
-Usage Notes:
+   Usage Notes:
     - Run these checks after data loading bronze Layer.
     - Investigate any discrepancies found during the checks.
 */
