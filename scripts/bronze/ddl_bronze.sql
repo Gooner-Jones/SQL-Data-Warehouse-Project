@@ -1,5 +1,5 @@
 -- ================================================================================================================
--- Create Bronze Layer Tables
+-- DDL Script: Create Bronze Layer Tables
 -- ================================================================================================================
 /*
    This script creates tables in the 'bronze' schema, dropping existing tables 
