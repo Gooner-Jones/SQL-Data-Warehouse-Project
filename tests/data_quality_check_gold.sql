@@ -28,9 +28,8 @@ HAVING COUNT(*) > 1;
 -- =========================================================================================================
 -- Check for Uniqueness of Product Key in gold.dim_products
 -- Expectation: No results 
-SELECT 
-    product_key,
-    COUNT(*) AS duplicate_count
+SELECT product_key,
+       COUNT(*) AS duplicate_count
 FROM gold.dim_products
 GROUP BY product_key
 HAVING COUNT(*) > 1;
@@ -42,7 +41,7 @@ HAVING COUNT(*) > 1;
 SELECT * 
 FROM gold.fact_sales f
 LEFT JOIN gold.dim_customers c
-ON c.customer_key = f.customer_key
+ON        c.customer_key = f.customer_key
 LEFT JOIN gold.dim_products p
-ON p.product_key = f.product_key
+ON        p.product_key = f.product_key
 WHERE p.product_key IS NULL OR c.customer_key IS NULL  
