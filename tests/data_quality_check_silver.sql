@@ -87,8 +87,8 @@ WHERE prd_end_dt < prd_start_dt;
 -- Sales = Quantity * Price
 -- Values must not be null, zero or negative.
 SELECT DISTINCT sls_sales,
-				sls_quantity,
-				sls_price
+		sls_quantity,
+		sls_price
 FROM silver.crm_sales_details
 WHERE sls_sales != sls_quantity * sls_price
 OR sls_sales IS NULL 
@@ -104,8 +104,7 @@ ORDER BY sls_sales, sls_quantity, sls_price
 -- =============================================================================================
 -- Identify Out-of-Range Dates
 -- Expectation: Birthdates between 1924-01-01 and Today
-SELECT DISTINCT 
-    bdate 
+SELECT DISTINCT bdate 
 FROM silver.erp_cust_az12
 WHERE bdate < '1924-01-01' 
    OR bdate > GETDATE();
