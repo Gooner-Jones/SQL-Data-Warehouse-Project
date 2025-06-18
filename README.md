@@ -13,25 +13,25 @@ This project showcases the design and implementation of a modern SQL-based Data 
 
 Key components include:
 
-Data Architecture: Structuring a layered warehouse to support clean data flow and efficient query performance.
+- Data Architecture: Structuring a layered warehouse to support clean data flow and efficient query performance.
 
-ETL Pipelines: Extracting, transforming, and loading data from raw sources into curated layers using modular SQL workflows.
+- ETL Pipelines: Extracting, transforming, and loading data from raw sources into curated layers using modular SQL workflows.
 
-Data Modeling: Designing star schema models with well-structured fact and dimension tables to support robust analytics.
+- Data Modeling: Designing star schema models with well-structured fact and dimension tables to support robust analytics.
 
-Analytics & Reporting: Generating insight-driven reports and dashboards through advanced SQL queries.
+- Analytics & Reporting: Generating insight-driven reports and dashboards through advanced SQL queries.
 
 This repository highlights expertise in:
 
-SQL Development & Optimization
+- SQL Development & Optimization
 
-Data Engineering & ETL Design
+- Data Engineering & ETL Design
 
-Data Warehouse Architecture
+- Data Warehouse Architecture
 
-Dimensional Modeling
+- Dimensional Modeling
 
-Analytical Reporting & Insights
+- Analytical Reporting & Insights
 
 # Important Links & Tools:
 
