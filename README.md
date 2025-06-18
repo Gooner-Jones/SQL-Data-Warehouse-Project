@@ -66,7 +66,7 @@ Objective
 This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
 
 #  About Me
-Hi, I'm Neo — a Microsoft Certified Fabric Analytics Engineer with a growing passion for data engineering. I thrive on solving real-world problems using SQL, and I'm especially excited about the capabilities of Microsoft Fabric. From building data pipelines to exploring insights in the Lakehouse, I enjoy every part of working with data inside this evolving ecosystem.
+Hi, I'm Neo Jones — a Microsoft Certified Fabric Analytics Engineer with a growing passion for data engineering. I thrive on solving real-world problems using SQL, and I'm especially excited about the capabilities of Microsoft Fabric. From building data pipelines to exploring insights in the Lakehouse, I enjoy every part of working with data inside this evolving ecosystem.
 
 This portfolio reflects my journey into the tech field, showcasing my hands-on projects, SQL skills, and curiosity-driven learning. Outside of work and code, I’m a proud single dad and a lifelong Arsenal supporter (yes, even through the tough seasons!).
 
