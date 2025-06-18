@@ -28,8 +28,7 @@ This repository is an excellent resource for professionals to showcase expertise
 
 - **[Datasets](datasets/):** Access to the project dataset (csv files).
 - **[Data Catalog ](docs/data_catalog.md):** Data Catalog for Gold Layer.
-- [Naming Conventions](docs/namimng_conventions.md):
-- **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
+- **[Naming Conventions](docs/namimng_conventions.md):** Outlines the naming conventions used for schemas, tables, views, columns, and other objects.
 
 # Project Requirements
 
