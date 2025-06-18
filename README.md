@@ -9,20 +9,29 @@ The data architecture for this project follows the Medallion Architecture: Bronz
 3. Gold Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
 # Project Overview
-This project involves:
+This project showcases the design and implementation of a modern SQL-based Data Warehouse using the Medallion Architecture framework (Bronze, Silver, Gold layers). It reflects best practices for building scalable, analytics-ready data infrastructure in a real-world setting.
 
-1. Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
-2. ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
-3. Data Modeling: Developing fact and dimension tables optimized for analytical queries.
-4. Analytics & Reporting: Creating SQL-based reports and dashboards for actionable insights.
+Key components include:
 
-This repository is an excellent resource for professionals to showcase expertise in:
-- SQL Development
-- Data Architect
-- Data Engineering
-- ETL Pipeline Developer
-- Data Modeling
-- Data Analytics
+Data Architecture: Structuring a layered warehouse to support clean data flow and efficient query performance.
+
+ETL Pipelines: Extracting, transforming, and loading data from raw sources into curated layers using modular SQL workflows.
+
+Data Modeling: Designing star schema models with well-structured fact and dimension tables to support robust analytics.
+
+Analytics & Reporting: Generating insight-driven reports and dashboards through advanced SQL queries.
+
+This repository highlights expertise in:
+
+SQL Development & Optimization
+
+Data Engineering & ETL Design
+
+Data Warehouse Architecture
+
+Dimensional Modeling
+
+Analytical Reporting & Insights
 
 # Important Links & Tools:
 
