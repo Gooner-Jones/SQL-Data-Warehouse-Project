@@ -27,8 +27,8 @@ This repository is an excellent resource for professionals to showcase expertise
 # Important Links & Tools:
 
 - **[Datasets](datasets/):** Access to the project dataset (csv files).
-- **[Data Catalog ](https://github.com/Gooner-Jones/SQL-Data-Warehouse-Project/blob/main/docs/data_catalog.md):** Data Catalog for Gold Layer.
-- **[Naming Conventions](https://github.com/Gooner-Jones/SQL-Data-Warehouse-Project/blob/main/docs/namimng_conventions.md).
+- **[Data Catalog ](docs/data_catalog.md):** Data Catalog for Gold Layer.
+- **[Naming Conventions](docs/namimng_conventions.md)
 - **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
 
 # Project Requirements
