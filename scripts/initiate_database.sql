@@ -18,6 +18,9 @@ BEGIN
 END;
 GO
 
+USE DataWareHouse;
+GO
+
 -- Create the 'DataWarehouse' database
 CREATE DATABASE DataWarehouse;
 GO
